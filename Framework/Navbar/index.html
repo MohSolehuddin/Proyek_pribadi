@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <nav>
+      <h4>MOH. SOLEHUDDIN</h4>
+      <ul>
+        <li><a href="#">Profil</a></li>
+        <p>|</p>
+        <li><a href="#">Skill</a></li>
+        <p>|</p>
+        <li><a href="#">Produk</a></li>
+        <p>|</p>
+        <li><a href="#">Jasa</a></li>
+        <p>|</p>
+        <li><a href="#">Kontak </a></li>
+      </ul>
+      <div class="TitikTiga">
+        <input type="checkbox"/>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+    <script>
+      const TitikTiga = document.querySelector('.TitikTiga input:nth-child(1)');
+      const nav = document.querySelector('nav ul');
+      TitikTiga.addEventListener('click',function() {
+        nav.classList.toggle('slide');
+      });
+    </script>
+  </body>
+</html>
