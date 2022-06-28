@@ -1,0 +1,24 @@
+section {
+  margin: auto;
+  text-align: center;
+}
+body{
+  font-family: 'Roboto Slab', Serif;
+  color: red ;
+  text-shadow: 0 0 100px white;
+  background-image: url('belajar.png');
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  overflow: hidden;
+  transition: 0.3s;
+}
+Button,
+input,
+select{
+  background-color: Skyblue;
+  box-shadow: 0 0 2.5px Skyblue;
+  margin: auto;
+}
+Button:hover {
+  transform: translateX(1px) translateY(1px);
+}
