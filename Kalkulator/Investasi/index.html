@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+    
+    <title>Investasi</title>
+  </head>
+  <body>
+    <script src="investasi.js" type="text/javascript" charset="utf-8"></script>
+    <section class="Badan">
+      <h1 class="">Kalkukator Investasi</h1>
+      <label for="Modal">Modal: </label>
+      <input type="number" name="Modal" id="Modal" value="" placeholder="Masukan modal awal"/><br />
+      <label for="lamaInvestasi">lama investasi:</label>
+      <input type="number" name="lamaInvestasi" id="lamaInvestasi" value="" placeholder="Lama investasi..."/>
+      <select name="Waktu" id="Waktu">
+        <option value="Tahun">Tahun</option>
+        <option value="Bulan">Bulan</option>
+        <option value="Hari">Hari</option>
+      </select><br />
+      <label for="Return">Return:</label>
+      <input type="number" name="Return" id="Return" value="" placeholder="Return..."/><label for="Return">%</label>
+      <select name="WaktuReturn" id="WaktuReturn">
+        <option value="Tahun">Tahun</option>
+        <option value="Bulan">Bulan</option>
+        <option value="Hari">Hari</option>
+      </select>
+      </section>
+      <button type="submit" onclick="returnSaham()">Total</button>
+  </body>
+</html>
