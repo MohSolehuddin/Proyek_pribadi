@@ -1,0 +1,41 @@
+<Tampilan>
+    cols:1
+    id: App
+    row:6
+    padding: 1
+    spacing: 15
+    size: root.width,root.height
+    BoxLayout:
+        Label:
+            text:"JADWAL PELAJARAN"
+            font_size: 72
+    
+    BoxLayout:
+        row_force_default:False
+        row_default_width:50
+        col_force_default:False
+        col_default_height:700
+        Button:
+            text:"senin"
+            on_press:root.senin()
+ 
+        Button:
+            text:"selasa"
+            on_press:root.selasa()
+
+        Button:
+            text:"Rabu"
+            on_press:root.rabu()
+
+        Button:
+            text:"Kamis"
+            on_press:root.kamis()
+    
+        Button:
+            text:"jum'at"
+            on_press:root.jumat()
+            
+
+                
+            
+            
