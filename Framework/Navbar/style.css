@@ -1,0 +1,137 @@
+:root{
+  --wucf: #848484;
+  --wubf: #bce6f1;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  overflow-x: hidden;
+}
+nav{
+  font-family: cursive;
+  display: flex;
+  position: fixed;
+  background-color: var(--wucf);
+  color: white;
+  justify-content: space-around;
+  font-size: 1em;
+  box-shadow: 0 1px 0 1px #a5a5a5;
+  height: 50px;
+  align-items: center;
+  width: 100%;
+}
+nav ul{
+  display: flex;
+  font-size: 0.7em;
+  list-style: none;
+}
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  margin: 10px;
+  transition: 0.3s;
+}
+nav ul li a:hover{
+  color: red;
+}
+.TitikTiga{
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+}
+.TitikTiga input{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  left: 2px;
+  top: 0px;
+  opacity: 0;
+  z-index: 10;
+}
+.TitikTiga span{
+  height: 3px;
+  width: 28px;
+  background-color: var(--wubf);
+  display: flex;
+  margin: 7px;
+  transition: 0s;
+}
+.TitikTiga input:checked ~ span:nth-child(2){
+  background-color: red;
+  transform-origin: 0 0;
+  transform: rotate(45deg) translate(3.5px,-9.5px);
+}
+.TitikTiga input:checked ~ span:nth-child(3){
+  display: none;
+}
+.TitikTiga input:checked ~ span:nth-child(4){
+  background-color: red;
+  transform-origin: 0 100%;
+  transform: rotate(-45deg) translate(3px,9px);
+}
+
+/*Responsive*/
+@media screen and (min-width:769px) and (max-width: 1024px){
+ .TitikTiga{
+   display: none;
+ }
+ nav ul p{
+   display: none;
+ }
+ nav{
+   padding: 20px 30px;
+   font-size: 2.5em;
+   justify-content: space-evenly;
+ }
+ /**/
+ /**/
+ /**/
+ /**/
+}
+@media screen and (max-width: 768px){
+  /*navigasi*/
+  nav{
+    justify-content: space-between;
+    height: 40px;
+    font-size: 1.2em;
+  }
+  nav ul p{
+    display: none;
+  }
+  nav ul{
+    top: 0;
+    right: 0;
+    position: absolute;
+    flex-direction: column;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    font-size: 1.2em;
+    z-index: -1;
+    transform: translateX(-100%);
+    color: black;
+    transition: all 1s;
+    opacity: 0;
+  }
+  nav ul.slide{
+    opacity: 0.5;
+    transform: translateX(0);
+  }
+  /**/
+  /**/
+  /**/
+  /**/
+}
+@media screen and (max-width: 576px){
+  nav ul p{
+    display: inherit;
+  }
+  nav{
+    justify-content: space-around;
+    height: 45px;
+  }
+}
