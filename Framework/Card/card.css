@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=The+Nautigal:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Lemonada&family=Lovers+Quarrel&display=swap');
+
 body{
   padding: 0;
   margin: 0;
@@ -8,17 +11,17 @@ body{
   background: black;
 }
 .card{
+  font-family: 'Lemonada', cursive;
   margin: auto;
   padding: 10px;
   width: 90vw;
-  height: 100px;
   color: var(--clr);
   background-color: black;
   border-top-right-radius: 2px;
-  border-top-left-radius: 15px;
+  border-top-left-radius: 48px;
   border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 15px;
-  border: 1.5px solid var(--clr);
+  border-bottom-right-radius: 48px;
+  border: .5px solid var(--clr);
   box-shadow: 0 0px 5px var(--clr);
   background-attachment: fixed;
   transition: .3s;
@@ -27,4 +30,58 @@ body{
   transform: scale(1.2em);
   border: 3px solid var(--clr);
   box-shadow: 0 0 10px var(--clr);
+}
+.card img{
+  width: 90vw;
+  height: 90vw;
+  border-radius: 48px;
+  border: 1px solid var(--clr);
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 48px;
+  padding: 10px;
+  background-color: black;
+  border: .1px solid var(--clr);
+  box-shadow: 0 0 .1px var(--clr);
+  color: var(--clr);
+  border-radius: 20px;
+  width: var(--w);
+  transition: .3s;
+}
+.btn:hover{
+  color: black;
+  background-color: var(--clr);
+  filter: blur(1px);
+  border: 5px solid var(--clr);
+  box-shadow: 0 0 1px var(--clr);
+}
+.text-center{
+  text-align: center;
+}
+.mb-1{
+  margin-bottom: 5px;
+}
+@media{
+  h1{
+    font-size: 1.6em;
+  }
+  h2{
+    font-size: 1.5em;
+  }
+  h3{
+    font-size: 1.4em;
+  }
+  h4{
+    font-size: 1.3em;
+  }
+  h5{
+    font-size: 1.2em;
+  }
+  p{
+    font-size: 1.2em;
+  }
 }
