@@ -1,0 +1,30 @@
+body{
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+.card{
+  margin: auto;
+  padding: 10px;
+  width: 90vw;
+  height: 100px;
+  color: var(--clr);
+  background-color: black;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 15px;
+  border: 1.5px solid var(--clr);
+  box-shadow: 0 0px 5px var(--clr);
+  background-attachment: fixed;
+  transition: .3s;
+}
+.card:hover{
+  transform: scale(1.2em);
+  border: 3px solid var(--clr);
+  box-shadow: 0 0 10px var(--clr);
+}
