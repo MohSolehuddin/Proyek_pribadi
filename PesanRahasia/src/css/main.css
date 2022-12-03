@@ -1,1 +1,56 @@
 
+html{
+  scroll-behavior: smooth;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  min-height: 100vh;
+  margin: auto;
+  text-align: center;
+}
+main{
+  margin: auto auto;
+  border-radius: 20px;
+  box-shadow: 1px 1px solid black;
+  width: 95vw;
+  background-color: orange;
+  padding: 20px 10px;
+  box-sizing: border-box;
+}
+details{
+  background-color: #010101;
+  color: orange;
+  border-radius: 2px;
+}
+span{
+  color: magenta;
+}
+button{
+  background-color: orange;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+input{
+  background-color: transparent;
+  width: 70%;
+  padding: 10px;
+}
+#proses{
+  text-align: center;
+}
+.container{
+  width: 80%;
+  margin: auto;
+}
+@media (min-width:600px) {
+  main{
+    width: 600px;
+  }
+}
